@@ -29,7 +29,9 @@ var myName = "France";
 var notHakeem;
 
 if (myName != "Hakeem Olajuwon") {
-notHakeem = true
+  if (myName != "Karl Malone") {
+    notHakeem = true
+  }
 };
 
 // #7 Create an if statement that checks the age variable below. If age is greater than 16, then set canDrive to true otherwise set canDrive to false. The canDrive variable will be set by the unit test so do not adjust it.
@@ -38,7 +40,7 @@ var age = 16;
 var canDrive;
 
 if (age >= 16) {
-canDrive = true
+canDrive = true;
 } else if (age < 16) {
 canDrive = false
 };
@@ -48,12 +50,13 @@ canDrive = false
 var colorResponse;
 var responseCreator = function(param){
 if (param === "green") {
-return ("Green is okay")
+colorResponse = "Green is okay";
 } else if (param === "red") {
-return ("I heart red")
+colorResponse = "I heart red";
 } else {
-return ("What is your favorite color?")
-}
+colorResponse = "What is your favorite color?";
+} 
+return colorResponse
 };
 
 // #9 Create a function called 'sum' that takes in a parameter and returns the sum of that parameter.
@@ -66,5 +69,5 @@ return total
 // #10 Create a function called greeter that takes in two parameters, name(a string) and number(a number). Have greeter return a string that says something like this 'Hi! I am Bryan and I am 28 years old" but with the appropriate values.
 
 function greeter(name, number) {
-return "Hi! I am " + name + " and I am " + number + " years old"
-};
+  return "Hi! I am " + name + " and I am " + number + " years old"
+  };
